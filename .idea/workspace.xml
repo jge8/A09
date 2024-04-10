@@ -7,12 +7,13 @@
     <list default="true" id="96d12ee8-3a44-41e0-8e9a-12c057f91fc3" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/c7_index.html" beforeDir="false" afterPath="$PROJECT_DIR$/A11/c7_index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/c4_main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/c5_main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/c6_main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/c6_speaker.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/A11/styles/c7_main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A11/styles/c7_main.css" beforeDir="false" afterPath="$PROJECT_DIR$/A11/styles/c7_main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/c7_speaker.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/c8_main.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/A11/styles/slicknav.css" beforeDir="false" />
@@ -66,7 +67,7 @@
       <workItem from="1712697390981" duration="357000" />
       <workItem from="1712697784046" duration="6336000" />
       <workItem from="1712780466159" duration="786000" />
-      <workItem from="1712781648173" duration="5771000" />
+      <workItem from="1712781648173" duration="6241000" />
     </task>
     <servers />
   </component>

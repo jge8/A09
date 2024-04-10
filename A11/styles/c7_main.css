@@ -1,4 +1,3 @@
-/* the styles for the elements */
 * {
 	margin: 0;
 	padding: 0;
@@ -18,7 +17,6 @@ a:focus, a:hover {
 	font-style: italic;
 }
 
-/* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
@@ -41,7 +39,6 @@ header img {
 	text-shadow: 2px 2px 2px #800000;
 }
 
-/* the styles for the navigation bar */
 nav {
 	clear: left;
 	margin: 0;
@@ -60,38 +57,38 @@ nav ul ul {
 	display: none;
 	position: absolute;
 	top: 100%;
-	min-width: 160px; /* Set a minimum width for the dropdown */
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Optional: adds a shadow for better visibility */
-	z-index: 1; /* Ensures dropdown appears on top of other content */
+	min-width: 160px;
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+	z-index: 1;
 }
 
 nav ul ul li {
-	width: 100%; /* Ensures dropdown items fill the dropdown */
-	box-sizing: border-box; /* Ensures padding and border are included in the width */
-	float: none; /* Prevents items from floating */
-	position: relative; /* For positioning nested submenus if necessary */
+	width: 100%;
+	box-sizing: border-box;
+	float: none;
+	position: relative;
 }
 
 nav ul ul li a {
-	padding: 10px 15px; /* Adds more padding for dropdown links */
-	color: white; /* Sets text color */
-	text-decoration: none; /* Removes underline */
-	display: block; /* Ensures link fills its container for easier clicking */
-	white-space: nowrap; /* Prevents text wrapping */
+	padding: 10px 15px;
+	color: white;
+	text-decoration: none;
+	display: block;
+	white-space: nowrap;
 }
 nav li:hover > ul {
 	display: block;
 }
 nav li {
 	float: left;
-	width: 20%; /* Ensure each li takes up 20% of the nav width */
-	padding: 0; /* Adjust padding as needed */
-	margin: 0; /* Ensure there's no extra margin */
-	border-right: 2px solid black; /* Keep if needed */
-	box-sizing: border-box; /* Ensures padding and border are included in the width */
+	width: 20%;
+	padding: 0;
+	margin: 0;
+	border-right: 2px solid black;
+	box-sizing: border-box;
 }
 nav li:last-child {
-	border-right: none; /* Removes border for the last item */
+	border-right: none;
 }
 nav li a {
 	display: block;
@@ -103,10 +100,9 @@ nav li a {
 	font-weight: bold;
 }
 
-/* Style adjustments for the current class to differentiate the active link */
 nav a.current, nav li a:hover {
-	background-color: #931420; /* Slightly darker red for active/hover state */
-	color: yellow; /* Text color for active state */
+	background-color: #931420;
+	color: yellow;
 }
 nav li:hover > ul {
 	display: block;
@@ -123,7 +119,6 @@ section ul {
 	list-style-type: circle;
 }
 
-/* the styles for the section */
 section {
 	width: 525px;
 	float: right;
@@ -152,7 +147,6 @@ section li {
 	padding-bottom: .35em;
 }
 
-/* the styles for the article */
 article {
 	padding: .5em 0;
 	border-top: 2px solid #800000;
@@ -171,7 +165,6 @@ article img {
 	border: 1px solid black;
 }
 
-/* the styles for the aside */
 aside {
 	width: 215px;
 	float: right;
@@ -192,11 +185,10 @@ aside img {
 	padding-bottom: 1em;
 }
 footer {
-	background-color: #931420; /* Red background */
-	color: white; /* White text color */
-	text-align: center; /* Center the text */
-	padding: 1em 0; /* Add some padding for spacing */
-	clear: both; /* Clear floats */
+	background-color: #931420;
+	color: white;
+	text-align: center;
+	padding: 1em 0;
+	clear: both;
 }
 
-/* the
