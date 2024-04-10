@@ -8,27 +8,22 @@ html {
 }
 body {
 	font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    width: 800px;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+	font-size: 100%;
+	width: 800px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
 }
 a:focus, a:hover {
 	font-style: italic;
 }
+
 /* the styles for the header */
 header {
 	padding: 1.5em 0 2em 0;
 	border-bottom: 3px solid #931420;
-		background-image: -moz-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 	background-image: linear-gradient(
-	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+			30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
 }
 header h2 {
 	font-size: 175%;
@@ -45,27 +40,109 @@ header img {
 .shadow {
 	text-shadow: 2px 2px 2px #800000;
 }
+
+/* the styles for the navigation bar */
+nav {
+	clear: left;
+	margin: 0;
+	padding: 0;
+	border-bottom: 3px solid #800000;
+	position: relative;
+
+
+}
+nav ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+nav ul ul {
+	display: none;
+	position: absolute;
+	top: 100%;
+	min-width: 160px; /* Set a minimum width for the dropdown */
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); /* Optional: adds a shadow for better visibility */
+	z-index: 1; /* Ensures dropdown appears on top of other content */
+}
+
+nav ul ul li {
+	width: 100%; /* Ensures dropdown items fill the dropdown */
+	box-sizing: border-box; /* Ensures padding and border are included in the width */
+	float: none; /* Prevents items from floating */
+	position: relative; /* For positioning nested submenus if necessary */
+}
+
+nav ul ul li a {
+	padding: 10px 15px; /* Adds more padding for dropdown links */
+	color: white; /* Sets text color */
+	text-decoration: none; /* Removes underline */
+	display: block; /* Ensures link fills its container for easier clicking */
+	white-space: nowrap; /* Prevents text wrapping */
+}
+nav li:hover > ul {
+	display: block;
+}
+nav li {
+	float: left;
+	width: 20%; /* Ensure each li takes up 20% of the nav width */
+	padding: 0; /* Adjust padding as needed */
+	margin: 0; /* Ensure there's no extra margin */
+	border-right: 2px solid black; /* Keep if needed */
+	box-sizing: border-box; /* Ensures padding and border are included in the width */
+}
+nav li:last-child {
+	border-right: none; /* Removes border for the last item */
+}
+nav li a {
+	display: block;
+	text-align: center;
+	padding: 1em 0;
+	text-decoration: none;
+	background-color: #800000;
+	color: white;
+	font-weight: bold;
+}
+
+/* Style adjustments for the current class to differentiate the active link */
+nav a.current, nav li a:hover {
+	background-color: #931420; /* Slightly darker red for active/hover state */
+	color: yellow; /* Text color for active state */
+}
+nav li:hover > ul {
+	display: block;
+}
+nav::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+section ul {
+	list-style-type: circle;
+}
+section ul {
+	list-style-type: circle;
+}
+
 /* the styles for the section */
 section {
 	width: 525px;
 	float: right;
 	padding: 0 20px 20px 20px;
 }
+section h1, section h2 {
+	color: #800000;
+	padding: .5em 0 .25em 0;
+}
 section h1 {
 	font-size: 150%;
-	padding: .5em 0 .25em 0;
-	margin: 0;
 }
 section h2 {
-	color: #800000;
 	font-size: 130%;
-	padding: .5em 0 .25em 0;
 }
-section p {
+section p, section blockquote {
 	padding-bottom: .5em;
 }
 section blockquote {
-	padding: 0 2em;
 	font-style: italic;
 }
 section ul {
@@ -100,10 +177,12 @@ aside {
 	float: right;
 	padding: 0 0 20px 20px;
 }
-aside h2 {
+aside h2, aside h3 {
 	color: #800000;
-	font-size: 130%;
 	padding: .5em 0 .25em 0;
+}
+aside h2 {
+	font-size: 130%;
 }
 aside h3 {
 	font-size: 105%;
@@ -112,15 +191,12 @@ aside h3 {
 aside img {
 	padding-bottom: 1em;
 }
-
-/* the styles for the footer */
 footer {
-	background-color: #931420;
-	clear: both;
+	background-color: #931420; /* Red background */
+	color: white; /* White text color */
+	text-align: center; /* Center the text */
+	padding: 1em 0; /* Add some padding for spacing */
+	clear: both; /* Clear floats */
+}
 
-}
-footer p {
-	text-align: center;
-	color: white;
-	padding: 1em 0;
-}
+/* the
